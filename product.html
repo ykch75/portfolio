@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>INFO|Portfolio</title>
+<meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
+<meta name="Keywords" content="キーワード,キーワード,キーワード" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" type="img/x-icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Amatic+SC|Norican' rel='stylesheet' type='text/css'><!--googlewebフォント-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><!--アイコンwebフォント-->
+<link rel="stylesheet" href="css/vertical-responsive-menu.css" /><!--レスポンシブメニュー-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<!--javascript設定-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script><!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+<script src="js/vertical-responsive-menu.min.js" ></script><!--レスポンシブメニュー-->
+<script src="js/scrolltopcontrol.js"></script><!--スクロールしながらページのトップに戻る-->
+</head>
+
+<body>
+<noscript>
+<p>※このページはJavaScriptを使用しています。JavaScript設定を有効にしてご覧ください。</p>
+</noscript>
+<div class="wrapper">
+  <div class="main">
+    <div class="mov_header">
+      <!--ロゴ（ページ左上のサイト名）-->
+      <h1>
+        <a href="index.html" title="ここにキーワードを含むページの見出しを記入">Yuki Irie</a>
+      </h1>
+      <!--ナビゲーションメニューー-->
+      <!--width:768px以下の時のメニュー開ボタン-->
+      <button type="button" id="toggleMenu" class="toggle_menu">
+      <i class="fa fa-bars"></i>
+      </button>
+    </div>
+    <nav class="vertical_nav">
+      <ul id="js-menu" class="menu">
+        <li class="menu--item">
+          <a href="information.html" class="menu--link" title="Information">
+          <span class="menu--label">Information</span>
+          </a>
+        </li>
+        <!-- <li class="menu--item  menu--item__has_sub_menu">
+          <label class="menu--link">
+            <span class="menu--label">Content</span>
+          </label>
+          <ul class="sub_menu">
+            <li class="sub_menu--item">
+              <a href="#" class="sub_menu--link">Submenu</a>
+            </li>
+            <li class="sub_menu--item">
+              <a href="#" class="sub_menu--link">Submenu</a>
+            </li>
+            <li class="sub_menu--item">
+              <a href="#" class="sub_menu--link">Submenu</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu--item">
+          <a href="#" class="menu--link" title="Content">
+          <span class="menu--label">Content</span>
+          </a>
+        </li>-->
+        <li class="menu--item">
+          <a href="product.html" class="menu--link" title="Content">
+          <span class="menu--label">Product</span>
+          </a>
+        </li> 
+      </ul>
+      <button id="collapse_menu" class="collapse_menu">
+      </button>
+    </nav>
+
+    <div class="content">
+      <header>
+        <h2>Product</h2>
+      </header>
+      <div class="content_inner">
+        <article>
+          <section>
+            <ul><li>ウカミング！</li></ul>
+            </section><center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pyeEWD87N7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </article>
+        
+        <!-- / .content_inner -->
+      </div>
+      <!-- / .content -->
+    </div>
+    <!-- / .main -->
+  </div>
+  <div class="mov_header2">
+    
+    <!--右上の検索-->
+    <div class="search" style="display:inline-flex">
+      <!--Google Adsenseのカスタム検索エンジンで取得したコードを記述（下記コードはname="cx"のvalue（ここは自分のコードを記述）を削除している為動作不可）-->
+      <form action="http://www.google.co.jp/cse" id="cse-search-box">
+        <input type="hidden" name="cx" value="" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name="q" size="55" /><button type="submit" name="sa"><i class="fa fa-search fa-lg"></i></button>
+      </form>
+      <script type="text/javascript" src="http://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+      <!-- / .search -->
+    </div>
+  </div>
+  <!--右側の内容-->
+  <div class="right_content">
+    <div class="ad"><!--広告など--></div>
+  </div>
+  <!-- / .wrapper -->
+</div>
+</body>
+</html>
