@@ -39,16 +39,15 @@
     opacity: 0.8;
   }
 
-
-
 .msr_list06{
     margin:0 -10px;
   }
+  /* レスポンシブにしたい */
   .msr_list06 li{
     width:33.3%;
     padding:0 10px;
     display:inline-block;
-    float:left;
+    /* float:left; */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
