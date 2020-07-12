@@ -1,0 +1,27 @@
+<!-- メモです -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--右上の検索-->
+        <div class="search" style="display:inline-flex">
+            <!--Google Adsenseのカスタム検索エンジンで取得したコードを記述（下記コードはname="cx"のvalue（ここは自分のコードを記述）を削除している為動作不可）-->
+            <form action="http://www.google.co.jp/cse" id="cse-search-box">
+              <input type="hidden" name="cx" value="" />
+              <input type="hidden" name="ie" value="UTF-8" />
+              <input type="text" name="q" size="55" /><button type="submit" name="sa"><i class="fa fa-search fa-lg"></i></button>
+            </form>
+            <script type="text/javascript" src="http://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+            <!-- / .search -->
+          </div>
+        </div>
+        <!--右側の内容-->
+        <div class="right_content">
+          <div class="ad"><!--広告など--></div>
+        </div>      
+</body>
+</html>
