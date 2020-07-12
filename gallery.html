@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>HOME|YukiIrie</title>
+<title>ここにキーワードを含むページのタイトルを記入</title>
 <meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
 <meta name="Keywords" content="キーワード,キーワード,キーワード" />
 <link rel="icon" href="http://saetl.net/favicon.ico" type="image/x-icon" />
@@ -12,7 +12,9 @@
 <link href='https://fonts.googleapis.com/css?family=Mrs Sheppards' rel='stylesheet' type='text/css'><!--googlewebフォント-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><!--アイコンwebフォント-->
 <link rel="stylesheet" type="text/css" href="css/menu_sideslide.css" /><!--ドロワーメニュー-->
-<link rel="stylesheet" href="css/jquery-letterfx.css"><!--テキストアニメーション-->
+<!--ギャラリー＆スライドショー-->
+<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="css/blueimp-gallery-indicator.css">
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -23,7 +25,7 @@
 <noscript>
 <p>※このページはJavaScriptを使用しています。JavaScript設定を有効にしてご覧ください。</p>
 </noscript>
-<div class="container"> 
+<div class="container">
   
   <!--ドロワーメニュー-->
   <div class="menu-wrap">
@@ -50,32 +52,54 @@
       </div>
     </nav>
     <button class="close-button" id="close-button">Close Menu</button>
-    <!-- / .menu-wrap --> 
+    <!-- / .menu-wrap -->
   </div>
   <button class="menu-button" id="open-button">Open Menu</button>
   <div class="content-wrap">
-    <div class="content"> 
+    <div class="content">
       
-      <!--ヘッダー-->
-      <header>
-        <h1 class="tagline toppage">Sample Template</h1>
-      </header>
       <!--右側SNSのアニメーション-->
       <ul id="nav">
-        <li><a class="facebook" href="#" target="_blank"><i class="fa fa-facebook-official fa_awe"></i> <span>FACEBOOK</span> </a></li>
-        <li><a class="twitter" href="#" target="_blank"> <i class="fa fa-twitter-square tw_awe"></i><span>TWITTER</span> </a></li>
+        <li>
+          <a class="facebook" href="#" target="_blank"><i class="fa fa-facebook-official fa_awe"></i>
+          <span>FACEBOOK</span>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="#" target="_blank">
+          <i class="fa fa-twitter-square tw_awe"></i><span>TWITTER</span>
+          </a>
+        </li>
       </ul>
-      <!-- / .content --> 
+      <article>
+        <h2>Gallery</h2>
+        <!--Flickr APIで画像表示-->
+        <div id="links" class="links"></div>
+        <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+          <div class="slides"></div>
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="close">×</a>
+          <a class="play-pause"></a>
+          <ol class="indicator">
+          </ol>
+        </div>
+      </article>
+      
+      <!-- / .content -->
     </div>
-    <!-- / .content-wrap --> 
+    <!-- / .content-wrap -->
   </div>
-  <!-- / .container --> 
+  <!-- / .container -->
 </div>
-<!--javascript設定--> 
+<!--javascript設定-->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> <!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード--> 
-<!--ドロワーメニュー--> 
-<script src="js/classie.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+<!--ドロワーメニュー-->
+<script src="js/classie.js"></script>
 <script src="js/main.js"></script>
 <!--右側SNSのアニメーション--><script>
 $(function() {
@@ -89,18 +113,10 @@ $(function() {
         }, 300);
     });
 });
-</script> 
-<!--テキストアニメーション--> 
-<script src="js/tuxsudo.min.js"></script> 
-<script src="js/jquery-letterfx.min.js"></script> 
-<script>
-$(function() {
-    $(".tagline").letterfx({
-	  "fx": "fall",
-	  "backwards": false,
-	  "timing": 100,
-    });
-});
 </script>
+<!--ギャラリー＆スライドショー-->
+<script src="js/blueimp-gallery.min.js"></script>
+<script src="js/jquery.image-gallery.min.js"></script>
+<script src="js/demo.js"></script>
 </body>
 </html>

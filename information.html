@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>HOME|YukiIrie</title>
+<title>INFO|YukiIrie</title>
 <meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
 <meta name="Keywords" content="キーワード,キーワード,キーワード" />
 <link rel="icon" href="http://saetl.net/favicon.ico" type="image/x-icon" />
@@ -12,7 +12,6 @@
 <link href='https://fonts.googleapis.com/css?family=Mrs Sheppards' rel='stylesheet' type='text/css'><!--googlewebフォント-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><!--アイコンwebフォント-->
 <link rel="stylesheet" type="text/css" href="css/menu_sideslide.css" /><!--ドロワーメニュー-->
-<link rel="stylesheet" href="css/jquery-letterfx.css"><!--テキストアニメーション-->
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -23,7 +22,7 @@
 <noscript>
 <p>※このページはJavaScriptを使用しています。JavaScript設定を有効にしてご覧ください。</p>
 </noscript>
-<div class="container"> 
+<div class="container">
   
   <!--ドロワーメニュー-->
   <div class="menu-wrap">
@@ -50,32 +49,56 @@
       </div>
     </nav>
     <button class="close-button" id="close-button">Close Menu</button>
-    <!-- / .menu-wrap --> 
+    <!-- / .menu-wrap -->
   </div>
   <button class="menu-button" id="open-button">Open Menu</button>
   <div class="content-wrap">
-    <div class="content"> 
+    <div class="content">
       
-      <!--ヘッダー-->
-      <header>
-        <h1 class="tagline toppage">Sample Template</h1>
-      </header>
       <!--右側SNSのアニメーション-->
       <ul id="nav">
-        <li><a class="facebook" href="#" target="_blank"><i class="fa fa-facebook-official fa_awe"></i> <span>FACEBOOK</span> </a></li>
-        <li><a class="twitter" href="#" target="_blank"> <i class="fa fa-twitter-square tw_awe"></i><span>TWITTER</span> </a></li>
+        <li>
+          <a class="facebook" href="#" target="_blank"><i class="fa fa-facebook-official fa_awe"></i>
+          <span>FACEBOOK</span>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="#" target="_blank">
+          <i class="fa fa-twitter-square tw_awe"></i><span>TWITTER</span>
+          </a>
+        </li>
       </ul>
-      <!-- / .content --> 
+      <article>
+        <h2>テンプレートのご利用について</h2>
+        <ul>
+          <li> このテンプレートはすべて無料でご利用いただける
+            <a href="http://saetl.net/"> Saetl.net </a>
+            から配布しています。
+          <li>
+            著作権表示は必要ありません（テンプレートにも記載はありません）
+          <li> 無料テンプレートでよくあるページ内の著作権表示は一切必要ありませんのでご自由にお使いください。
+          <li> 詳しくは
+            <a href="http://saetl.net/about.html"> 利用規約 </a>
+            をご覧ください。
+          
+          <li>
+            <a href="http://saetl.net/howto.html"> ご利用方法はこちら </a>
+            からお願いします。
+        </ul>
+      </article>
+      
+      <!-- / .content -->
     </div>
-    <!-- / .content-wrap --> 
+    <!-- / .content-wrap -->
   </div>
-  <!-- / .container --> 
+  <!-- / .container -->
 </div>
-<!--javascript設定--> 
+<!--javascript設定-->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> <!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード--> 
-<!--ドロワーメニュー--> 
-<script src="js/classie.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+<!--ドロワーメニュー-->
+<script src="js/classie.js"></script>
 <script src="js/main.js"></script>
 <!--右側SNSのアニメーション--><script>
 $(function() {
@@ -87,18 +110,6 @@ $(function() {
         $(this).find('span').stop().animate({
             'marginRight': '0px'
         }, 300);
-    });
-});
-</script> 
-<!--テキストアニメーション--> 
-<script src="js/tuxsudo.min.js"></script> 
-<script src="js/jquery-letterfx.min.js"></script> 
-<script>
-$(function() {
-    $(".tagline").letterfx({
-	  "fx": "fall",
-	  "backwards": false,
-	  "timing": 100,
     });
 });
 </script>
