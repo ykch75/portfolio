@@ -74,7 +74,8 @@ h1 {
 	position: fixed; /*ボックスの配置方法(fixedは固定)*/
 	top: 100px; /*上からの距離(positionで指定している場合に適用)*/
 	left: 0; /*左からの距離(positionで指定している場合に適用)*/
-	font-family: 'Amatic SC', cursive; /*フォントの種類指定(googleのwebフォント)*/
+    /* font-family: 'Amatic SC', cursive; フォントの種類指定(googleのwebフォント) */
+    font-family: 'Bangers', cursive;
 	font-size: 4em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	line-height: 40px; /*行の高さ指定(数値のみの場合はfont-sizeの倍数)*/
 	text-align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
@@ -102,7 +103,8 @@ h1 a:hover {
 header h2 {
 	font-size: 4em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	font-weight: normal; /*フォントの太さ指定(normalは標準)*/
-	font-family: 'Norican', cursive; /*フォントの種類指定(左から優先順位)*/
+    /* font-family: 'Norican', cursive; フォントの種類指定(左から優先順位) */
+    font-family: 'Bangers', cursive;
 	text-align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
 }
 /*メインの内容*/
