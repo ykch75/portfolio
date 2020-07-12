@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>INFO|Portfolio</title>
+<title>SKILL|Portfolio</title>
 <meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
 <meta name="Keywords" content="キーワード,キーワード,キーワード" />
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -23,7 +23,8 @@
 </head>
 
 <body>
-<div class="wrapper">
+
+  <div class="wrapper">
   <div class="main">
     <div class="mov_header">
       <!--ロゴ（ページ左上のサイト名）-->
@@ -42,13 +43,13 @@
           <a href="information.html" class="menu--link" title="Information">
           <span class="menu--label">Information</span>
           </a>
-        </li>
+        </li>        
         <li class="menu--item">
             <a href="skillset.html" class="menu--link" title="Content">
             <span class="menu--label">SkillSet</span>
             </a>
         </li> 
-
+  
         <!-- <li class="menu--item  menu--item__has_sub_menu">
           <label class="menu--link">
             <span class="menu--label">Content</span>
@@ -82,26 +83,22 @@
 
     <div class="content">
       <header>
-        <h2>Product</h2>
+        <h2>SkillSet</h2>
       </header>
       <div class="content_inner">
         <article>
           <section>
-            <ul><li><h3>ウカミング！</h3></li>
-                <li>作曲、動画編集を担当しました。→<a href="https://www.youtube.com/embed/pyeEWD87N7c">ウカミング！</a></li>
-                <li>使用アプリ</li>
-                <li>・GarageBand(Gt,Ba,Dr,Chorus)</li>
-                <li>・iMovie</li>
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/pyeEWD87N7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <hr><li><h3>ブログサイト</h3></li>
-            <li><a href="https://chan-711c9.firebaseapp.com/">MyBlog</a></li>
-            <li>使用アプリ,ツール</li>
-            <li>・firebase</li>
-            <li>・html,css,js</li>
-            <li>cf:<a href="https://github.com/ykch75/mysite">GitHub(ykch75/mycite)</a></li>
-        </ul>
-
-    </section>
+            <h3>Language</h3>
+            <li>C/C++</li>
+            <li>Swift,Python,html,css,js(勉強中)</li><hr>
+            <h3>Framework/Library</h3>
+            <li>jQuery(勉強中)</li><hr>
+            <h3>Tool</h3>
+            <li>Git/Firebase/Postman(勉強中)</li><hr>
+            <h3>OS</h3>
+            <li>Linux</li>
+          </ul>
+        </section>
         </article>
         
         <!-- / .content_inner -->
@@ -111,6 +108,23 @@
     <!-- / .main -->
   </div>
   <div class="mov_header2">
+    
+    <!--右上の検索-->
+    <div class="search" style="display:inline-flex">
+      <!--Google Adsenseのカスタム検索エンジンで取得したコードを記述（下記コードはname="cx"のvalue（ここは自分のコードを記述）を削除している為動作不可）-->
+      <form action="http://www.google.co.jp/cse" id="cse-search-box">
+        <input type="hidden" name="cx" value="" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name="q" size="55" /><button type="submit" name="sa"><i class="fa fa-search fa-lg"></i></button>
+      </form>
+      <script type="text/javascript" src="http://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+      <!-- / .search -->
+    </div>
+  </div>
+  <!--右側の内容-->
+  <div class="right_content">
+    <div class="ad"><!--広告など--></div>
+  </div>
   <!-- / .wrapper -->
 </div>
 </body>
