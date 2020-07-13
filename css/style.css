@@ -136,7 +136,8 @@ article {
 article h3 {
 	font-size: 2em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	font-weight: normal; /*フォントの太さ指定(normalは標準)*/
-	margin-bottom: 10px; /*ボックス外側下の余白*/
+    margin-bottom: 10px; /*ボックス外側下の余白*/
+    font-family: 'Rubik', sans-serif;/*かわいいやつにした*/
 }
 article li, p {
 	font-size: 1.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
@@ -218,12 +219,14 @@ header {
 	background: #fff; /*背景指定*/
 }
 header h2 {
+    font-family: 'Rubik', sans-serif;/*かわいいやつにした*/
 	font-size: 2.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 }
 .wrapper {
 	overflow: visible; /*floatの解除を初期値に戻す*/
 }
 .content {
+    font-family: 'Rubik', sans-serif;/*かわいいやつにした*/
 	width: 100%; /*幅指定(100%は画面横幅いっぱいに表示)*/
 	float: none; /*要素を左か右に寄せて配置(noneはなし)*/
 	margin: 120px 0 20px; /*ボックス外側の余白*/
@@ -232,7 +235,7 @@ header h2 {
 	margin: 0;/*ボックス外側の余白*/
 }
 article h3 {
-	font-size: 1.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+    font-size: 1.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 }
 .top_section {
 	margin: 100px auto 0; /*ボックス外側の余白*/
@@ -254,7 +257,7 @@ form {
 }
 
 @media screen and (min-width: 787px) and (max-width: 1200px) {
-section {
-	width: 90%; /*幅指定(100%は画面横幅いっぱいに表示)*/
-}
+    section {
+        width: 90%; /*幅指定(100%は画面横幅いっぱいに表示)*/
+    }
 }
