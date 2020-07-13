@@ -146,6 +146,7 @@ section {
 	margin: 0 auto; /*ボックス外側の余白*/
     width: 100%; /*幅指定(100%は画面横幅いっぱいに表示)*/
     margin-top: 30px;
+    margin-bottom: 50px; /*ボックス外側下の余白*/
 }
 /*左下の内容*/
 
@@ -261,3 +262,7 @@ form {
         width: 90%; /*幅指定(100%は画面横幅いっぱいに表示)*/
     }
 }
+
+ul {
+    list-style: none;
+  }
