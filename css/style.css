@@ -136,7 +136,8 @@ article {
 article h3 {
 	font-size: 2em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	font-weight: normal; /*フォントの太さ指定(normalは標準)*/
-    margin-bottom: 10px; /*ボックス外側下の余白*/
+    margin-bottom: 5px; /*ボックス外側下の余白*/
+    margin-top: 10px;
     font-family: 'Rubik', sans-serif;/*かわいいやつにした*/
 }
 article li, p {
