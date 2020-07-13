@@ -1,0 +1,18 @@
+.button {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: black;
+    border: solid 2px black;
+    border-radius: 3px;
+    transition: .4s;
+    padding-top: 10px;
+    display: flex;
+    /* width: 30%; */
+    margin: auto;
+  }
+  
+  .button:hover {
+    background: black;
+    color: white;
+  }
