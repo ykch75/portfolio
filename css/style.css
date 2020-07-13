@@ -1,25 +1,28 @@
-@charset 'utf-8'; /*文字コード指定*/
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+/*文字コード指定*/
 /* ----- css reset(各ブラウザで指定されているスタイルを初期化)と全体設定 ----- */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td, img {
 	margin: 0; /*ボックス外側の余白(値1つは上下左右をまとめて指定)*/
 	padding: 0; /*ボックス内側の余白(値1つは上下左右をまとめて指定)*/
-	border: 0; /*境界線指定*/
+    border: 0; /*境界線指定*/
 }
 html, body {
-	height: 100%; /*領域の高さ指定*/
+    height: 100%; /*領域の高さ指定*/
 }
 body {
 	font-size: 75%; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	line-height: 2; /*行の高さ指定(数値のみの場合はfont-sizeの倍数)*/
 	background: #fff; /*背景指定*/
-	font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro'; /*フォントの種類指定(左から優先順位)*/
-	color: #333; /*文字色指定*/
+	/* font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro'; フォントの種類指定(左から優先順位) */
+    color: #333; /*文字色指定*/
 }
 ol, ul {
 	list-style: none; /*リストマーカーの種類指定(noneはなし)*/
 }
 a {
-	color: #333; /*文字色指定*/
+    color: #333; /*文字色指定*/
+    font-family: 'Rubik', sans-serif;/*かわいいやつにした*/
 }
 a:hover {
 	text-decoration: none; /*テキストの装飾指定(下線、上線など)(noneはなし)*/
@@ -42,7 +45,7 @@ a:hover {
 	width: 100%; /*幅指定(100%は画面横幅いっぱいに表示)*/
 	margin: auto; /*ボックス外側の余白*/
 	height: 100%; /*領域の高さ指定*/
-	overflow: hidden; /*floatの解除*/
+	/* overflow: hidden; floatの解除 */
 }
 .main {
 	width: 100%; /*幅指定(100%は画面横幅いっぱいに表示)*/
@@ -134,7 +137,8 @@ article li, p {
 }
 section {
 	margin: 0 auto; /*ボックス外側の余白*/
-	width: 60%; /*幅指定(100%は画面横幅いっぱいに表示)*/
+    width: 100%; /*幅指定(100%は画面横幅いっぱいに表示)*/
+    margin-top: 30px;
 }
 /*左下の内容*/
 
