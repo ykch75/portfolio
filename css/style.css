@@ -123,7 +123,7 @@ header h2 {
     
 }
 .top_h2 img {
-    width: 30%; /*幅指定(100%は画面横幅いっぱいに表示)*/
+    width: 60%; /*幅指定(100%は画面横幅いっぱいに表示)*/
     display: block;
     margin-top: auto;
     margin-bottom: auto;
