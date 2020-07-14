@@ -267,3 +267,23 @@ form {
 ul {
     list-style: none;
   }
+  /* 追加 */
+  .cp_imghover {
+	overflow: hidden;
+	width: 400px;
+	height: 400px;
+	margin: 20px auto;
+	border: 10px solid #ffffff;
+	box-shadow: 0 0 5px #cccccc;
+	cursor: pointer;
+}
+/*Morphing*/
+.cp_morph {
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.cp_morph:hover {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	border-radius: 50%;
+}
