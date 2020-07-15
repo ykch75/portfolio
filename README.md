@@ -1,5 +1,7 @@
 # Portfolio
-むずかち！
+むずかしいですね
+DBやjQueryなどはわかってません
+DMちゃんとしたい
 ## DEMO
 <https://ykch75.github.io/portfolio/>
 ## Reference
