@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Top|Portfolio</title>
-<meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
-<meta name="Keywords" content="キーワード,キーワード,キーワード" />
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" type="img/x-icon" href="favicon.ico" />
-<link rel="stylesheet" href="css/style.css">
-<link href='https://fonts.googleapis.com/css?family=Amatic+SC|Aladin' rel='stylesheet' type='text/css'><!--googlewebフォント-->
-<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><!--アイコンwebフォント-->
-<link rel="stylesheet" href="css/vertical-responsive-menu.css" /><!--レスポンシブメニュー-->
-<link rel="stylesheet" href="css/vegas.min.css"><!--背景画像のスライドショー-->
-<!--[if lt IE 9]>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Top|Portfolio</title>
+  <meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
+  <meta name="Keywords" content="キーワード,キーワード,キーワード" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" type="img/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC|Aladin' rel='stylesheet' type='text/css'>
+  <!--googlewebフォント-->
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--アイコンwebフォント-->
+  <link rel="stylesheet" href="css/vertical-responsive-menu.css" />
+  <!--レスポンシブメニュー-->
+  <link rel="stylesheet" href="css/vegas.min.css">
+  <!--背景画像のスライドショー-->
+  <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
-<!--javascript設定-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script><!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
-<script src="http://zeptojs.com/zepto.min.js"></script><!--スマートフォン用に最適化されたjQuery互換ライブラリ-->
-<script src="js/vegas.min.js"></script><!--背景画像のスライドショー-->
-<script>
-$(function() {
-    $('.top_content').vegas({
-		 overlay: 0,
+  <!--javascript設定-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+  <script src="http://zeptojs.com/zepto.min.js"></script>
+  <!--スマートフォン用に最適化されたjQuery互換ライブラリ-->
+  <script src="js/vegas.min.js"></script>
+  <!--背景画像のスライドショー-->
+  <script>
+    $(function () {
+      $('.top_content').vegas({
+        overlay: 0,
         transitionDuration: 5000,
         delay: 8000,
         slides: [{
-            src: "images/slide1.jpg",
-            transition: "fade2",
+          src: "images/slide1.jpg",
+          transition: "fade2",
         }, {
-            src: "images/slide2.jpg",
-            transition: "zoomOut",
+          src: "images/slide2.jpg",
+          transition: "zoomOut",
         }, {
-            src: "images/slide3.jpg",
-            transition: "swirlRight",
+          src: "images/slide3.jpg",
+          transition: "swirlRight",
         }, {
-            src: "images/slide4.jpg",
-            animation: "random",
+          src: "images/slide4.jpg",
+          animation: "random",
         }, {
-            src: "images/slide5.jpg",
-            animation: "kenburns",
+          src: "images/slide5.jpg",
+          animation: "kenburns",
         }],
+      });
     });
-});
-</script>
-<script src="js/vertical-responsive-menu.min.js" ></script><!--レスポンシブメニュー-->
-<script src="js/scrolltopcontrol.js"></script><!--スクロールしながらページのトップに戻る-->
+  </script>
+  <script src="js/vertical-responsive-menu.min.js"></script>
+  <!--レスポンシブメニュー-->
+  <script src="js/scrolltopcontrol.js"></script>
+  <!--スクロールしながらページのトップに戻る-->
 </head>
 
 <body>
 
-<!--ロゴ（ページ左上のサイト名）-->
-<h1>
-  <a href="index.html" title="Home">Yuki Irie</a>
-</h1>
+  <!--ロゴ（ページ左上のサイト名）-->
+  <h1>
+    <a href="index.html" title="Home">Yuki Irie</a>
+  </h1>
 
-<!--ナビゲーションメニューー-->
+  <!--ナビゲーションメニューー-->
 
-<!--width:768px以下の時のメニュー開ボタン-->
+  <!--width:768px以下の時のメニュー開ボタン-->
 
-<button type="button" id="toggleMenu" class="toggle_menu">
-<i class="fa fa-bars"></i>
-</button>
+  <button type="button" id="toggleMenu" class="toggle_menu">
+    <i class="fa fa-bars"></i>
+  </button>
 
-<nav class="vertical_nav">
-  <ul id="js-menu" class="menu">
-    <li class="menu--item">
-      <a href="about.html" class="menu--link" title="About">
-      <span class="menu--label">About</span>
-      </a>
-    </li>
-    <li class="menu--item">
-      <a href="skillset.html" class="menu--link" title="SkillSet">
-      <span class="menu--label">SkillSet</span>
-      </a>
-    </li> 
+  <nav class="vertical_nav">
+    <ul id="js-menu" class="menu">
+      <li class="menu--item">
+        <a href="about.html" class="menu--link" title="About">
+          <span class="menu--label">About</span>
+        </a>
+      </li>
+      <li class="menu--item">
+        <a href="skillset.html" class="menu--link" title="SkillSet">
+          <span class="menu--label">SkillSet</span>
+        </a>
+      </li>
 
-    <!-- <li class="menu--item  menu--item__has_sub_menu">
+      <!-- <li class="menu--item  menu--item__has_sub_menu">
       <label class="menu--link">
         <span class="menu--label">Content</span>
       </label>
@@ -105,29 +116,32 @@ $(function() {
       <span class="menu--label">Content</span>
       </a>
     </li> -->
-    <li class="menu--item">
-      <a href="product.html" class="menu--link" title="Product">
-      <span class="menu--label">Product</span>
-      </a>
-    </li> 
-  </ul>
-  <button id="collapse_menu" class="collapse_menu">
-  </button>
-</nav>
+      <li class="menu--item">
+        <a href="product.html" class="menu--link" title="Product">
+          <span class="menu--label">Product</span>
+        </a>
+      </li>
+    </ul>
+    <button id="collapse_menu" class="collapse_menu">
+    </button>
+  </nav>
 
-  
-<div class="top_wrapper">
-  <div class="top_content">
-    
-    <!--ページのメイン部分-->
-    <article>
-      <section class="top_section">
-        <h2 class="top_h2"><img src="images/818chan.JPG" alt="toppage img"/></h2>
-      </section>
-    </article>
-    
-    <!-- / .topcontent --></div>
-  <!-- / .toppagewrapper --></div>
-  
+
+  <div class="top_wrapper">
+    <div class="top_content">
+
+      <!--ページのメイン部分-->
+      <article>
+        <section class="top_section">
+          <h2 class="top_h2"><img src="images/818chan.JPG" alt="toppage img" /></h2>
+        </section>
+      </article>
+
+      <!-- / .topcontent -->
+    </div>
+    <!-- / .toppagewrapper -->
+  </div>
+
 </body>
+
 </html>
