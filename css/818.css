@@ -1,0 +1,191 @@
+    #stage {
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    #thumbs {
+        margin-left: 2%;
+    }
+    
+    #thumbs label img {
+        width: 18.5%;
+        cursor: pointer;
+    }
+    
+    #r1,
+    #r2,
+    #r3,
+    #r4,
+    #r5,
+    #r6,
+    #r7,
+    #r8,
+    #r9,
+    #r10,
+    #r11,
+    #r12,
+    #r13,
+    #r14,
+    #r15,
+    #r16,
+    #r17,
+    #r18,
+    #r19,
+    #r20,
+    #r21,
+    #r22,
+    #r23,
+    #r24,
+    #r25,
+    #r26,
+    #r27,
+    #r28,
+    #r29,
+    #r30,
+    #r31,
+    #r32,
+    #r33,
+    #r34,
+    #r35,
+    #r36,
+    #r37,
+    #r38,
+    #r39,
+    #r40,
+    #r41,
+    #r42,
+    #r43,
+    #r44,
+    #r45,
+    #r46,
+    #r47,
+    #r48,
+    #r49,
+    #r50,
+    #r51,
+    #r52,
+    #r53,
+    #r54,
+    #r55,
+    #r56,
+    #r57,
+    #r58,
+    #r59,
+    #r60,
+    #r61,
+    #r62,
+    #r63,
+    #r64,
+    #r65,
+    #r66,
+    #r67,
+    #r68,
+    #r69,
+    #r70,
+    #r71,
+    #r72,
+    #r73,
+    #r74,
+    #r75,
+    #r76,
+    #r77,
+    #r78 {
+        display: none;
+    }
+    /*表示写真の初期配置（全部透明に）とtransition設定*/
+    
+    .photo {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .photo img {
+        width: 100%;
+        opacity: 0;
+        -webkit-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+    /*チェックされたサムネイルに相当する写真だけを表示*/
+    
+    #r1:checked~#photo1 img,
+    #r2:checked~#photo2 img,
+    #r3:checked~#photo3 img,
+    #r4:checked~#photo4 img,
+    #r5:checked~#photo5 img,
+    #r6:checked~#photo6 img,
+    #r7:checked~#photo7 img,
+    #r8:checked~#photo8 img,
+    #r9:checked~#photo9 img,
+    #r10:checked~#photo10 img,
+    #r11:checked~#photo11 img,
+    #r12:checked~#photo12 img,
+    #r13:checked~#photo13 img,
+    #r14:checked~#photo14 img,
+    #r15:checked~#photo15 img,
+    #r16:checked~#photo16 img,
+    #r17:checked~#photo17 img,
+    #r18:checked~#photo18 img,
+    #r19:checked~#photo19 img,
+    #r20:checked~#photo20 img,
+    #r21:checked~#photo21 img,
+    #r22:checked~#photo22 img,
+    #r23:checked~#photo23 img,
+    #r24:checked~#photo24 img,
+    #r25:checked~#photo25 img,
+    #r26:checked~#photo26 img,
+    #r27:checked~#photo27 img,
+    #r28:checked~#photo28 img,
+    #r29:checked~#photo29 img,
+    #r30:checked~#photo30 img,
+    #r31:checked~#photo31 img,
+    #r32:checked~#photo32 img,
+    #r33:checked~#photo33 img,
+    #r34:checked~#photo34 img,
+    #r35:checked~#photo35 img,
+    #r36:checked~#photo36 img,
+    #r37:checked~#photo37 img,
+    #r38:checked~#photo38 img,
+    #r39:checked~#photo39 img,
+    #r40:checked~#photo40 img,
+    #r41:checked~#photo41 img,
+    #r42:checked~#photo42 img,
+    #r43:checked~#photo43 img,
+    #r44:checked~#photo44 img,
+    #r45:checked~#photo45 img,
+    #r46:checked~#photo46 img,
+    #r47:checked~#photo47 img,
+    #r48:checked~#photo48 img,
+    #r49:checked~#photo49 img,
+    #r50:checked~#photo50 img,
+    #r51:checked~#photo51 img,
+    #r52:checked~#photo52 img,
+    #r53:checked~#photo53 img,
+    #r54:checked~#photo54 img,
+    #r55:checked~#photo55 img,
+    #r56:checked~#photo56 img,
+    #r57:checked~#photo57 img,
+    #r58:checked~#photo58 img,
+    #r59:checked~#photo59 img,
+    #r60:checked~#photo60 img,
+    #r61:checked~#photo61 img,
+    #r62:checked~#photo62 img,
+    #r63:checked~#photo63 img,
+    #r64:checked~#photo64 img,
+    #r65:checked~#photo65 img,
+    #r66:checked~#photo66 img,
+    #r67:checked~#photo67 img,
+    #r68:checked~#photo68 img,
+    #r69:checked~#photo69 img,
+    #r70:checked~#photo70 img,
+    #r71:checked~#photo71 img,
+    #r72:checked~#photo72 img,
+    #r73:checked~#photo73 img,
+    #r74:checked~#photo74 img,
+    #r75:checked~#photo75 img,
+    #r76:checked~#photo76 img,
+    #r77:checked~#photo77 img,
+    #r78:checked~#photo78 img {
+        opacity: 1;
+    }

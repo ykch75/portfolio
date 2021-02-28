@@ -2,146 +2,220 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Top|Portfolio</title>
-  <meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
-  <meta name="Keywords" content="キーワード,キーワード,キーワード" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" type="img/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Amatic+SC|Aladin' rel='stylesheet' type='text/css'>
-  <!--googlewebフォント-->
-  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <!--アイコンwebフォント-->
-  <link rel="stylesheet" href="css/vertical-responsive-menu.css" />
-  <!--レスポンシブメニュー-->
-  <link rel="stylesheet" href="css/vegas.min.css">
-  <!--背景画像のスライドショー-->
-  <!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
-  <!--javascript設定-->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-  <!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
-  <script src="http://zeptojs.com/zepto.min.js"></script>
-  <!--スマートフォン用に最適化されたjQuery互換ライブラリ-->
-  <script src="js/vegas.min.js"></script>
-  <!--背景画像のスライドショー-->
-  <script>
-    $(function () {
-      $('.top_content').vegas({
-        overlay: 0,
-        transitionDuration: 5000,
-        delay: 8000,
-        slides: [{
-          src: "images/slide1.jpg",
-          transition: "fade2",
-        }, {
-          src: "images/slide2.jpg",
-          transition: "zoomOut",
-        }, {
-          src: "images/slide3.jpg",
-          transition: "swirlRight",
-        }, {
-          src: "images/slide4.jpg",
-          animation: "random",
-        }, {
-          src: "images/slide5.jpg",
-          animation: "kenburns",
-        }],
-      });
-    });
-  </script>
-  <script src="js/vertical-responsive-menu.min.js"></script>
-  <!--レスポンシブメニュー-->
-  <script src="js/scrolltopcontrol.js"></script>
-  <!--スクロールしながらページのトップに戻る-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/star.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="img/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <title>818 portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/818chan.JPG">
 </head>
 
 <body>
-
-  <!--ロゴ（ページ左上のサイト名）-->
-  <h1>
-    <a href="index.html" title="Home">Yuki Irie</a>
-  </h1>
-
-  <!--ナビゲーションメニューー-->
-
-  <!--width:768px以下の時のメニュー開ボタン-->
-
-  <button type="button" id="toggleMenu" class="toggle_menu">
-    <i class="fa fa-bars"></i>
-  </button>
-
-  <nav class="vertical_nav">
-    <ul id="js-menu" class="menu">
-      <li class="menu--item">
-        <a href="about.html" class="menu--link" title="About">
-          <span class="menu--label">About</span>
+    <header id="header">
+        <div id="wrapper">
+            <p class="btn-gnavi">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+            <nav id="global-navi">
+                <ul class="menu">
+                    <a href="#profile" class="logo"><img src="images/818chan.JPG" alt="logo"></a>
+                    <li><button href="#profile">Profile</button></li>
+                    <li><button href="#career">Career</button></li>
+                    <li><button href="#skill">SkillSet</button></li>
+                    <li><button href="#product">Product</button></li>
+                    <li><button href="#extra">Extra</button></li>
+                    <li><button href="#contact">Contact</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <a id="profile">
+            <h2 class="underline">Profile</h2>
         </a>
-      </li>
-      <li class="menu--item">
-        <a href="skillset.html" class="menu--link" title="SkillSet">
-          <span class="menu--label">SkillSet</span>
+        <div class="box-img">
+            <img border="1" src="images/818chan.JPG" width="128" height="128" alt="icon" title="icon">
+        </div>
+        <div class="box-text">
+            <b>818</b>
+            <br>お茶の水女子大学情報科学科 B2
+            <br>趣味をフルートにしたいと考えてます
+            <br>818でやいばと読みます
+            <br><br>
+        </div>
+        <a id="career">
+            <h2 class="underline">Career</h2>
         </a>
-      </li>
-
-      <!-- <li class="menu--item  menu--item__has_sub_menu">
-      <label class="menu--link">
-        <span class="menu--label">Content</span>
-      </label>
-      <ul class="sub_menu">
-        <li class="sub_menu--item">
-          <a href="#" class="sub_menu--link">Submenu</a>
-        </li>
-        <li class="sub_menu--item">
-          <a href="#" class="sub_menu--link">Submenu</a>
-        </li>
-        <li class="sub_menu--item">
-          <a href="#" class="sub_menu--link">Submenu</a>
-        </li>
-      </ul>
-    </li>
-    <li class="menu--item">
-      <a href="#" class="menu--link" title="Content">
-      <span class="menu--label">Content</span>
-      </a>
-    </li>
-    <li class="menu--item">
-      <a href="#" class="menu--link" title="Content">
-      <span class="menu--label">Content</span>
-      </a>
-    </li> -->
-      <li class="menu--item">
-        <a href="product.html" class="menu--link" title="Product">
-          <span class="menu--label">Product</span>
+        <h3>Job experience</h3>
+        <ul>
+            <li>
+                <h4>2020.10 ~ 現在</h4>　　メディア企業 長期インターン(iOS)
+            </li>
+            <li>
+                <h4>2020.05 ~ 2020.09</h4>
+            </li>　　メルカリ Buildインターン(iOS)<br>　　cf: <a class="link-hikaeme" href="https://mercan.mercari.com/articles/26923/">Build@Mercariインターンたちで、参加した感想・手応えをまとめてみました！</a>
+            <li>
+                <h4>2019.09</h4>
+            </li>　　JR東日本 テクニカルマネジメントコース(2week)
+        </ul>
+        <h3>Extra</h3>
+        <ul>
+            <li>2020.10 <a class="link-hikaeme" href="https://www.ipa.go.jp/jinzai/camp/2020/zenkoku2020_index.html" target="_blank">セキュリティキャンプ全国大会2020</a> Bトラック</li>
+            <li>2020.09 <a class="link-hikaeme" href="https://talent.supporterz.jp/geekten/2020/" target="_blank">技育展2020</a> はじめてのアウトプット部門</li>
+            <li>2020.09 <a class="link-hikaeme" href="https://mercan.mercari.com/articles/25142/" target="_blank">メルカリHackWeek</a> App for KOT 審査員特別賞</li>
+            <li>2020.08 <a class="link-hikaeme" href="https://hacku.yahoo.co.jp/hacku2020online1/" target="_blank">Yahoo!Japan HackU ONLINE vol.1</a></li>
+            <li>2020.05 <a class="link-hikaeme" href="https://mercan.mercari.com/articles/23192/" target="_blank">Build@Mercari</a></li>
+        </ul>
+        <a id="skill">
+            <h2 class="underline">Skill Set</h2>
         </a>
-      </li>
-    </ul>
-    <button id="collapse_menu" class="collapse_menu">
-    </button>
-  </nav>
+        <ul>
+            <li>
+                <h4>Language</h4>
+            </li>
+            日本語 <span class="star5_rating" data-rate="5"></span>
+            <br>English <span class="star5_rating" data-rate="2.5"></span>
+            <br>中文 <span class="star5_rating" data-rate="1"></span>
+            <li>
+                <h4>Programming Language</h4>
+            </li>
+            C/C++ <span class="star5_rating" data-rate="3"></span>
+            <br>Swift <span class="star5_rating" data-rate="2.5"></span>
+            <br>Java <span class="star5_rating" data-rate="1.5"></span>
+            <br>HTML/CSS <span class="star5_rating" data-rate="1.5"></span>
+            <li>
+                <h4>Tool</h4>
+            </li>
+            Git <span class="star5_rating" data-rate="3"></span>
+        </ul>
+        <a id="product">
+            <h2 class="underline">Product</h2>
+        </a>
+        <table>
+            <tr>
+                <figure class="cp_caption" ontouchstart="">
+                    <img src="images/jouhouka.png" alt="画像">
+                    <figcaption>
+                        <h2>常保ウカのHP</h2>
+                        <p>趣味で作成しました<br>隠しページがポイントです</p>
+                        <button><a href="https://jouhouka.github.io/Homepage/" target="_blank">More</a></button>
+                    </figcaption>
+                </figure>
+                <figure class="cp_caption" ontouchstart="">
+                    <img src="images/myblog.png" alt="画像">
+                    <figcaption>
+                        <h2>Blog</h2>
+                        <p>Build@Mercariで作成しました<br>未完成です</p>
+                        <button><a href="https://chan-711c9.firebaseapp.com/" target="_blank">More</a></button>
+                    </figcaption>
+                </figure>
+            </tr>
+            <tr>
+                <figure class="cp_caption" ontouchstart="">
+                    <img src="images/ukaming.png" alt="画像">
+                    <figcaption>
+                        <h2>ウカミング！</h2>
+                        <p>曲と動画を作りました</p>
+                        <button><a href="https://youtu.be/pyeEWD87N7c" target="_blank">Listen</a></button>
+                    </figcaption>
+                </figure>
+                <figure class="cp_caption" ontouchstart="">
+                    <img src="images/ribbons.png" alt="画像">
+                    <figcaption>
+                        <h2>Ribbons</h2>
+                        <p>徽音祭2020のテーマソングを<br>作編曲をしました</p>
+                        <button><a href="https://youtu.be/M2mfGmp8bx8" target="_blank">Listen</a></button>
+                    </figcaption>
+                </figure>
+            </tr>
+            <figure class="cp_caption" ontouchstart="">
+                <img src="images/goods.png" alt="画像">
+                <figcaption>
+                    <h2>818 goods</h2>
+                    <p>グッズを買えます</p>
+                    <button><a href="https://suzuri.jp/818chan_" target="_blank">Shop</a></button>
+                </figcaption>
+            </figure>
+        </table>
+        <br>
 
-
-  <div class="top_wrapper">
-    <div class="top_content">
-
-      <!--ページのメイン部分-->
-      <article>
-        <section class="top_section">
-          <h2 class="top_h2"><img src="images/818chan.JPG" alt="toppage img" /></h2>
-        </section>
-      </article>
-
-      <!-- / .topcontent -->
+        <a id="extra">
+            <h2 class="underline">Extra</h2>
+            <figure class="cp_caption" ontouchstart="">
+                <img src="images/818chan.JPG" alt="画像">
+                <figcaption>
+                    <h2>Diary</h2>
+                    <p>3ヶ月ほど続けてました</p>
+                    <button><a href="818chan.html">More</a></button>
+                </figcaption>
+            </figure>
+            <figure class="cp_caption" ontouchstart="">
+                <img src="images/cooking.jpeg" alt="画像">
+                <figcaption>
+                    <h2>Cooking</h2>
+                    <p>青いのが好きです</p>
+                    <button><a href="cooking.html">More</a></button>
+                </figcaption>
+            </figure>
+            <figure class="cp_caption" ontouchstart="">
+                <img src="images/movie.png" alt="画像">
+                <figcaption>
+                    <h2>Movie</h2>
+                    <p>たまに見ます</p>
+                    <button><a href="movie.html">Review</a></button>
+                </figcaption>
+            </figure>
+            <br>
+        </a>
+        <a id="contact">
+            <h2 class="underline">Contact</h2>
+        </a>
+        <ul class="follow-me">
+            <li>
+                <a href="https://twitter.com/818ch" target="_blank"></a>
+            </li>
+            <!-- <li>
+                <a href="https://www.amazon.co.jp/hz/wishlist/dl/invite/6bKbZc9?ref_=wl_share" target="_blank"></a>
+            </li> -->
+            <li>
+                <a href="https://suzuri.jp/818chan_" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://github.com/ykch75" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://note.com/818chan" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://qiita.com/818" target="_blank"></a>
+            </li>
+        </ul>
+        <br>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJoG108dRII2XunrFit_7AdHt6I8XCuO_UkrYe5TSZDejJFw/viewform?embedded=true" width="640" height="705" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" frameborder="no">読み込んでいます…</iframe>
+        <br>
+        <a class=" kakunin ">
+            <h2 class="underline ">動作確認</h2>
+        </a>
+        <ul>
+            <li>MacBook Air 13inch</li>
+            <li>iPhoneXR</li>
+        </ul>
+        その他機種で不具合ありましたら上記フォームよりよろしくお願いいたします。<br>
     </div>
-    <!-- / .toppagewrapper -->
-  </div>
-
+    <p id="pagetop"><a href="# ">TOP</a></p>
 </body>
+<footer>
+    <p style="text-align: center;">&copy;2020 818. All Rights Reserved.</p>
+</footer>
 
 </html>

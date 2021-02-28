@@ -1,0 +1,637 @@
+@charset "UTF-8";
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+p {
+    font-size: 14px;
+    line-height: 1.75;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 10.5px;
+}
+
+
+/* ボタンの設定 */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    margin-right: 5px;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: none;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1px solid #bbb;
+    border-radius: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+    /* color: #333; */
+    color: rgb(122, 122, 122);
+    border-color: rgb(201, 201, 201);
+    outline: 0;
+}
+
+#global-navi {
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid black;
+    padding-bottom: 0;
+}
+
+#wrapper nav ul li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#wrapper nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+#wrapper nav ul {
+    padding-left: 0%;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 0 0 0;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 4px;
+    width: 100%;
+    z-index: 9999;
+    height: 50px;
+}
+
+.head h1 a {
+    color: black;
+    padding: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(110, 110, 110);
+}
+
+.content {
+    display: fixed;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 800px;
+}
+
+.content p {
+    margin-bottom: 40px;
+}
+
+.menu .logo img {
+    max-width: 80px;
+    max-height: 80px;
+    float: left;
+    padding: 0px 10px 10px 10px;
+}
+
+
+/*スマホ画面でハンバーガーメニューの形にする*/
+
+@media screen and (max-width: 1000px) {
+    #wrapper nav {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        padding-top: 50px;
+        background: #333;
+        font-size: 16px;
+        box-sizing: border-box;
+        z-index: 2
+    }
+    #wrapper nav ul li {
+        display: block;
+        padding: 20px 28px
+    }
+    #wrapper nav ul li a {
+        text-decoration: none;
+        color: #ddd
+    }
+    #wrapper .btn-gnavi {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 24px;
+        z-index: 3;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+    #wrapper .btn-gnavi span {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #666;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+    #wrapper .btn-gnavi span:nth-child(1) {
+        top: 0
+    }
+    #wrapper .btn-gnavi span:nth-child(2) {
+        top: 10px
+    }
+    #wrapper .btn-gnavi span:nth-child(3) {
+        top: 20px
+    }
+    #wrapper .btn-gnavi.open {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+    #wrapper .btn-gnavi.open span {
+        background: #666
+    }
+    #wrapper .btn-gnavi.open span {
+        width: 24px;
+    }
+    #wrapper .contents section p {
+        position: absolute;
+        top: 50%;
+        width: 30%;
+        line-height: 1.4;
+        font-size: 20px;
+        color: #fff;
+        text-shadow: 0 0 6px #666
+    }
+    #wrapper .contents section:nth-child(odd) p {
+        left: 10%
+    }
+    #wrapper .contents section:nth-child(even) p {
+        right: 10%
+    }
+}
+
+.box-img,
+.box-text {
+    display: inline-block;
+    padding-left: 2em;
+}
+
+.box-text a.title {
+    color: #333;
+    text-decoration: underline;
+}
+
+.underline {
+    border-bottom: 3px solid #000;
+    padding-bottom: 0.5rem;
+}
+
+.content {
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+
+/*ページトップへ戻るボタン*/
+
+#pagetop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+#pagetop a {
+    display: block;
+    background: #666;
+    color: #fff;
+    width: 50px;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#pagetop a:hover {
+    background: #999;
+}
+
+
+/*ナビゲーションバーのボタン*/
+
+a:link {
+    text-decoration: none;
+}
+
+
+/* 全体設定 */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* タイムライン */
+
+@font-face {
+    font-family: 'ecoico';
+    src: url('../fonts/timelineicons/ecoico.eot');
+    src: url('../fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'), url('../fonts/timelineicons/ecoico.woff') format('woff'), url('../fonts/timelineicons/ecoico.ttf') format('truetype'), url('../fonts/timelineicons/ecoico.svg#ecoico') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.timeline {
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.timeline1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background: #8a8a8a;
+    left: 20%;
+    margin-left: -10px;
+}
+
+.timeline1>li .timeline2 {
+    display: block;
+    width: 25%;
+    padding-right: 100px;
+    position: absolute;
+}
+
+.timeline1>li {
+    list-style: none;
+}
+
+.timeline1>li span {
+    font-size: 1.3em;
+}
+
+.timeline1 a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* ふきだし */
+
+.timeline1>li .tl-label {
+    margin: 0 0 15px 25%;
+    background: #363636;
+    color: #fff;
+    padding: 1.5em;
+    padding-bottom: 0.2em;
+    padding-top: 1em;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+/* 奇数個目のの吹き出しの色を変える */
+
+.timeline1>li:nth-child(odd) .tl-label {
+    background: #222222;
+}
+
+.timeline1>li .tl-label h2 {
+    margin-top: 0px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.timeline1>li .tl-label::after {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #363636;
+    border-width: 10px;
+    top: 10px;
+}
+
+.timeline1>li:nth-child(odd) .tl-label::after {
+    border-right-color: #222222;
+}
+
+a.link-hikaeme {
+    color: rgb(94, 94, 94);
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+
+/* product */
+
+figure.cp_caption {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-width: 220px;
+    max-width: 300px;
+    max-height: 220px;
+    margin: 10px 1%;
+    text-align: center;
+    color: #fff;
+    background: rgba(27, 37, 56, 1);
+}
+
+figure.cp_caption * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+figure.cp_caption img {
+    width: 100%;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+    filter: brightness(40%);
+}
+
+figure.cp_caption figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3em 3em;
+}
+
+figure.cp_caption figcaption::before {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    bottom: 50%;
+    left: 30px;
+    content: '';
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    opacity: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: #fff;
+}
+
+figure.cp_caption h2 {
+    /* font-size: 3.2vw; */
+    margin: 0 0 5px;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 1;
+}
+
+figure.cp_caption p,
+figure.cp_caption a {
+    margin: 0 0 5px;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+}
+
+figure.cp_caption button {
+    margin: 0 0 5px;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+}
+
+figure.cp_caption:hover img {
+    text-align: center;
+    display: block;
+}
+
+figure.cp_caption:hover figcaption h2 {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    opacity: 1;
+}
+
+figure.cp_caption:hover figcaption p,
+figure.cp_caption:hover figcaption a {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    opacity: 0.9;
+    color: #fff;
+}
+
+figure.cp_caption:hover figcaption button {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    opacity: 0.9;
+    color: #fff;
+}
+
+figure.cp_caption:hover figcaption::before {
+    top: 30px;
+    bottom: 30px;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    opacity: 1;
+    background: rgba(170, 173, 180, 0);
+}
+
+figure.cp_caption img {
+    display: block;
+}
+
+
+/* SNSアイコン */
+
+.follow-me {
+    list-style: none;
+    margin: 0 0 -8px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.follow-me li {
+    float: left;
+    margin: 0 8px 8px 0;
+    padding: 0;
+}
+
+.follow-me li a::before {
+    background-color: #eee;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #333;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 16px;
+    height: 44px;
+    /* Button height */
+    line-height: 44px;
+    /* Button height */
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 44px;
+    /* Button width */
+}
+
+.follow-me li a:hover::before {
+    color: #fff;
+}
+
+.follow-me li a[href*="amazon.co"]::before {
+    content: "\f270";
+}
+
+.follow-me li a[href*="qiita"]::before {
+    content: "\f002";
+}
+
+.follow-me li a[href*="note.com"]::before {
+    content: "\f249";
+}
+
+.follow-me li a[href*="suzuri"]::before {
+    content: "\f07a";
+}
+
+.follow-me li a[href*="@"]::before {
+    content: "\f199";
+}
+
+.follow-me li a[href*="facebook.com"]::before {
+    content: "\f09a";
+}
+
+.follow-me li a[href*="github.com"]::before {
+    content: "\f09b";
+}
+
+.follow-me li a[href*="plus.google.com"]::before {
+    content: "\f0d5";
+}
+
+.follow-me li a[href*="instagram.com"]::before {
+    content: "\f16d";
+}
+
+.follow-me li a[href*="linkedin.com"]::before {
+    content: "\f0e1";
+}
+
+.follow-me li a[href*="spotify.com"]::before {
+    content: "\f1bc";
+}
+
+.follow-me li a[href*="twitter.com"]::before {
+    content: "\f099";
+}
+
+.follow-me li a[href*="youtube.com"]::before {
+    content: "\f16a";
+}
+
+.follow-me li a[href*="amazon.co"]:hover::before {
+    background-color: #FF9900;
+}
+
+.follow-me li a[href*="qiita"]:hover::before {
+    background-color: #4cb10d;
+}
+
+.follow-me li a[href*="note.com"]:hover::before {
+    background-color: #41C9B4;
+}
+
+.follow-me li a[href*="suzuri"]:hover::before {
+    background-color: #181717;
+}
+
+.follow-me li a[href*="@"]:hover::before {
+    background-color: #42c3ff;
+}
+
+.follow-me li a[href*="facebook.com"]:hover::before {
+    background-color: #3b5998;
+}
+
+.follow-me li a[href*="github.com"]:hover::before {
+    background-color: #181717;
+}
+
+.follow-me li a[href*="plus.google.com"]:hover::before {
+    background-color: #dc4e41;
+}
+
+.follow-me li a[href*="instagram.com"]:hover::before {
+    background-color: #125688;
+}
+
+.follow-me li a[href*="linkedin.com"]:hover::before {
+    background-color: #0077b5;
+}
+
+.follow-me li a[href*="spotify.com"]:hover::before {
+    background-color: #84bd00;
+}
+
+.follow-me li a[href*="twitter.com"]:hover::before {
+    background-color: #55acee;
+}
+
+.follow-me li a[href*="youtube.com"]:hover::before {
+    background-color: #cd201f;
+}
